@@ -1,5 +1,5 @@
 import { Artist } from './../shared/models/artist.model';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Album } from '../shared/models/album.model';
 
 @Component({
@@ -9,6 +9,7 @@ import { Album } from '../shared/models/album.model';
 })
 export class AlbumsComponent implements OnInit {
   public albums: Array<Album>;
+  @Output() selectAlbum: EventEmitter<Album> = new EventEmitter();
 
   ngOnInit() {
     this.albums = [
@@ -29,5 +30,8 @@ export class AlbumsComponent implements OnInit {
         cover: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/602f4731226337.5646928c3633f.jpg'
       }
     ];
+  }
+  onSelect(event, album: Album) {
+    this.selectAlbum.emit(album);
   }
 }

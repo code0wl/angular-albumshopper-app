@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   templateUrl: './album.component.html',
   styleUrls: ['./album.component.css']
 })
-export class AlbumComponent  {
+export class AlbumComponent {
   @Input() album: Album;
 }
