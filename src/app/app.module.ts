@@ -8,13 +8,15 @@ import { NavigationComponent } from './navigation/navigation.component';
 
 import { AlbumsComponent } from './music/albums/albums.component';
 import { AlbumComponent } from './music/album/album.component';
+import { AlbumDetailComponent } from './music/album-detail/album-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     AlbumsComponent,
-    AlbumComponent
+    AlbumComponent,
+    AlbumDetailComponent
   ],
   imports: [
     BrowserModule,
