@@ -1,0 +1,13 @@
+.home-menu {
+    padding: 1rem;
+    background-color: #1f8dd6;
+}
+
+.home-menu a {
+    color: white;
+}
+
+.home-menu a:hover {
+    background-color: #1f8dd6;
+    text-decoration: underline;
+}
