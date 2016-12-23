@@ -1,5 +1,7 @@
 .home-menu {
     padding: 1rem;
+    display: flex;
+    align-items: center;
     background-color: #1f8dd6;
 }
 
@@ -11,4 +13,11 @@
 .home-menu a:hover {
     background-color: #1f8dd6;
     text-decoration: underline;
+}
+
+.pure-menu-list {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
 }
