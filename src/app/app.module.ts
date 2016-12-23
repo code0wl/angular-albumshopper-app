@@ -6,13 +6,15 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
-
-import  '../../node_modules/purecss/build/pure-min.css';
+import { AlbumsComponent } from './music/albums/albums.component';
+import { AlbumComponent } from './music/album/album.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent
+    NavigationComponent,
+    AlbumsComponent,
+    AlbumComponent
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,7 @@
     color: white;
 }
 
+.home-menu a:focus,
 .home-menu a:hover {
     background-color: #1f8dd6;
     text-decoration: underline;
