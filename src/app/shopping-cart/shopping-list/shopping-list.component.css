@@ -7,14 +7,36 @@ div {
     position: relative;
 }
 
-div:hover ul:hover,
+div ul:hover,
 div:hover ul {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 div ul {
-    display: none;
-    left: 0;
-    background: red;
+    padding: 0;
+    list-style: none;
+    right: 0;
+    visibility: hidden;
+    transition: all .5s;
+    top: 1rem;
+    opacity: 0;
+    width: 11.5rem;
+    left: -8rem;
+    background: white;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, .5);
     position: absolute;
+}
+
+.fa-shopping-cart {
+    padding: 0 .2rem 0 1rem;
+}
+
+ul li {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background: rgba(0, 0, 0, .1);
 }
