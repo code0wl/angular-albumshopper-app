@@ -37,6 +37,14 @@ ul li {
     cursor: pointer;
 }
 
+ul li img {
+    max-width: 100%;
+}
+
 ul li:hover {
     background: rgba(0, 0, 0, .1);
+}
+
+.title {
+    padding: 0 .5rem;
 }
