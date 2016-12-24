@@ -10,9 +10,9 @@ import { Component, OnInit } from '@angular/core';
 export class ShoppingListComponent implements OnInit {
   addedAlbums: Array<Album>;
 
-  constructor(private ShoppingService: ShoppingService) { }
+  constructor(private shoppingService: ShoppingService) { }
 
   ngOnInit() {
-    this.addedAlbums = this.ShoppingService.albums;
+    this.addedAlbums = this.shoppingService.albums;
   }
 }

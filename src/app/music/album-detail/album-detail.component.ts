@@ -16,4 +16,3 @@ export class AlbumDetailComponent {
     this.shoppingService.addToCart(selectedAlbum);
   }
 }
-
