@@ -11,8 +11,5 @@
             <p [textContent]="selectedAlbum.genres"></p>
         </div>
     </div>
-
-    <form action="" (ngSubmit)="onSubmit()">
-        <button class="pure-button pure-button-primary"> Add {{selectedAlbum.title}} to shopping cart </button>
-    </form>
+    <button (click)="addToCart($event, selectedAlbum)" class="pure-button pure-button-primary"> Add {{selectedAlbum.title}} to shopping cart </button>
 </div>
