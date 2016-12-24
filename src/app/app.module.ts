@@ -1,3 +1,4 @@
+import { AlbumService } from './music/shared/services/album.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -26,7 +27,7 @@ import { ShoppingControlsComponent } from './shopping-cart/shopping-controls/sho
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [AlbumService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

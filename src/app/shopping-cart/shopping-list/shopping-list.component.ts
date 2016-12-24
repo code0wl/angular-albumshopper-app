@@ -1,33 +1,24 @@
+import { Subscription } from 'rxjs';
+import { AlbumService } from './../../music/shared/services/album.service';
 import { Album } from './../../music/shared/models/album.model';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-shopping-list',
   templateUrl: './shopping-list.component.html',
   styleUrls: ['./shopping-list.component.css']
 })
-export class ShoppingListComponent implements OnInit {
+export class ShoppingListComponent implements OnInit, OnDestroy {
   albums: Array<Album>;
-  constructor() { }
+  subscription: Subscription;
+
+  constructor(private albumService: AlbumService) { }
 
   ngOnInit() {
-   this.albums = [
-      {
-        release: '1999',
-        title: 'Xscape',
-        artists: [{ name: 'Michael Jackson' }],
-        genres: ['Pop'],
-        cover: 'http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-15.jpg',
-        label: 'Universal'
-      },
-      {
-        release: '2010',
-        title: 'Art vs Science',
-        artists: [{ name: 'some artist' }],
-        genres: ['experimental'],
-        label: 'some label',
-        cover: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/602f4731226337.5646928c3633f.jpg'
-      }
-    ];
+    this.subscription = this.albumService.albums.subscribe(albums => this.albums = albums);
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 }
