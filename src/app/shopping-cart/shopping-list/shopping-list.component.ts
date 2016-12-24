@@ -1,4 +1,4 @@
-import { AlbumService } from './../../music/shared/services/album.service';
+import { ShoppingService } from './../shared/services/shopping.service';
 import { Album } from './../../music/shared/models/album.model';
 import { Component, OnInit } from '@angular/core';
 
@@ -10,10 +10,9 @@ import { Component, OnInit } from '@angular/core';
 export class ShoppingListComponent implements OnInit {
   albums: Array<Album>;
 
-  constructor(private albumService: AlbumService) { }
+  constructor(private ShoppingService: ShoppingService) { }
 
   ngOnInit() {
-    this.albums = this.albumService.cartCollection;
+    this.albums = this.ShoppingService.albums;
   }
-
 }

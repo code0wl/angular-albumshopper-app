@@ -1,3 +1,4 @@
+import { ShoppingService } from './../../shopping-cart/shared/services/shopping.service';
 import { AlbumService } from './../shared/services/album.service';
 import { Album } from './../shared/models/album.model';
 import { Component, Input } from '@angular/core';
@@ -9,10 +10,10 @@ import { Component, Input } from '@angular/core';
 })
 export class AlbumDetailComponent {
   @Input() selectedAlbum: Album;
-  constructor(private albumService: AlbumService) { }
+  constructor(private albumService: AlbumService, private shoppingService: ShoppingService) { }
 
   addToCart(event, selectedAlbum) {
-    this.albumService.addToCartCollection(selectedAlbum);
+    this.shoppingService.addToCart(selectedAlbum);
   }
 }
 

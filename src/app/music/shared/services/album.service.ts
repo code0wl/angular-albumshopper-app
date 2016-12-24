@@ -15,10 +15,6 @@ export class AlbumService {
       .catch(this.handleError);
   }
 
-  addToCartCollection(album) {
-    this.cartCollection.push(album);
-  }
-
   private extractData(res: Response): Observable<Array<Album>> {
     const body = res.json();
     return body;
