@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shopping-list.component.css']
 })
 export class ShoppingListComponent implements OnInit {
-  albums: Array<Album>;
+  addedAlbums: Array<Album>;
 
   constructor(private ShoppingService: ShoppingService) { }
 
   ngOnInit() {
-    this.albums = this.ShoppingService.albums;
+    this.addedAlbums = this.ShoppingService.albums;
   }
 }
