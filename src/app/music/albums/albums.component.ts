@@ -1,7 +1,8 @@
+import { ActivatedRoute, Router } from '@angular/router';
 import { Album } from './../shared/models/album.model';
 import { AlbumService } from './../shared/services/album.service';
-import { Component, OnInit, EventEmitter, Output, OnDestroy } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Subscription, Observable } from 'rxjs';
 
 @Component({
   selector: 'app-albums',
@@ -10,10 +11,14 @@ import { Subscription } from 'rxjs';
 })
 export class AlbumsComponent implements OnInit, OnDestroy {
   albums: Array<Album>;
+  selectedAlbum: Album;
   subscription: Subscription;
-  @Output() selectAlbum: EventEmitter<Album> = new EventEmitter();
 
-  constructor(private albumService: AlbumService) { }
+  constructor(
+    private albumService: AlbumService,
+    private activatedRoute: ActivatedRoute,
+    private router: Router) {
+  }
 
   ngOnInit() {
     this.subscription = this.albumService.albums.subscribe((albums: Array<Album>) => this.albums = albums);
@@ -24,6 +29,7 @@ export class AlbumsComponent implements OnInit, OnDestroy {
   }
 
   onSelect(event, album: Album) {
-    this.selectAlbum.emit(album);
+    this.router.navigate(['albums', album.title]);
+    this.albumService.selectedAlbumItem = album;
   }
 }

@@ -1,8 +1,8 @@
 <div class="home-menu pure-menu pure-menu-horizontal">
-    <a href="#" class="pure-menu-heading pure-menu-link"> Awesome Albums </a>
+    <a [routerLink]="['/']" class="pure-menu-heading pure-menu-link"> Awesome Albums </a>
     <ul class="pure-menu-list">
-        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Albums</a></li>
-        <li class="pure-menu-item"><a href="#" class="pure-menu-link">User</a></li>
+        <li class="pure-menu-item"><a [routerLink]="['albums']" class="pure-menu-link">Albums</a></li>
+        <li class="pure-menu-item"><a class="pure-menu-link">User</a></li>
         <li class="pure-menu-item">
             <app-shopping-list></app-shopping-list>
         </li>

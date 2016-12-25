@@ -1,3 +1,5 @@
+import { MusicComponent } from './music/music.component';
+import { Routing } from './app.routes';
 import { ShoppingService } from './shopping-cart/shared/services/shopping.service';
 import { AlbumService } from './music/shared/services/album.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -21,11 +23,13 @@ import { ShoppingControlsComponent } from './shopping-cart/shopping-controls/sho
     AlbumComponent,
     AlbumDetailComponent,
     ShoppingListComponent,
-    ShoppingControlsComponent
+    ShoppingControlsComponent,
+    MusicComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    Routing,
     HttpModule
   ],
   providers: [AlbumService, ShoppingService],
