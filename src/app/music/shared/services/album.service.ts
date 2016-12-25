@@ -5,7 +5,6 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class AlbumService {
-  private selectedAlbum: Album;
   cartCollection: Array<Album> = [];
   constructor(private http: Http) { }
 
@@ -16,12 +15,8 @@ export class AlbumService {
       .catch(this.handleError);
   }
 
-  get selectedAlbumItem(): Album {
-    return this.selectedAlbum;
-  }
-
-  set selectedAlbumItem(album: Album) {
-    this.selectedAlbum = album;
+  getSelectedAlbum(albumName: string): any {
+    return this.cartCollection.filter(x => x.title === albumName)[0];
   }
 
   private extractData(res: Response): Observable<Array<Album>> {

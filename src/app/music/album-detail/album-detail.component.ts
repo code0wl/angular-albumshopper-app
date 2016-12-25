@@ -3,14 +3,14 @@ import { Subscription } from 'rxjs';
 import { AlbumService } from './../shared/services/album.service';
 import { Album } from './../shared/models/album.model';
 import { ShoppingService } from './../../shopping-cart/shared/services/shopping.service';
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, AfterContentChecked } from '@angular/core';
 
 @Component({
   selector: 'app-album-detail',
   templateUrl: './album-detail.component.html',
   styleUrls: ['./album-detail.component.css']
 })
-export class AlbumDetailComponent implements OnInit, OnDestroy {
+export class AlbumDetailComponent implements AfterContentChecked, OnDestroy {
   albumName: string;
   routerSubscription: Subscription;
   selectedAlbum: Album;
@@ -21,11 +21,11 @@ export class AlbumDetailComponent implements OnInit, OnDestroy {
     private albumService: AlbumService) {
   }
 
-  ngOnInit() {
+  ngAfterContentChecked() {
     this.routerSubscription = this.activatedRoute.params
       .subscribe((params: Params) => {
         this.albumName = params['name'];
-        this.selectedAlbum = this.albumService.selectedAlbumItem;
+        this.selectedAlbum = this.albumService.getSelectedAlbum(this.albumName);
       });
   }
 

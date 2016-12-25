@@ -1,7 +1,5 @@
 .album-item {
-    color: darkgray;
     border-bottom: 1px solid;
-    background: #eee;
     padding: 1rem;
 }
 
@@ -13,4 +11,15 @@
     max-width: 100%;
     border-radius: 2px;
     line-height: 0;
+}
+
+.list-item {
+    display: block;
+    transition: all .5s;
+    color: darkgray;
+    background: #e0e0e0;
+}
+
+.list-item.active {
+    background: #f0f0f0;
 }

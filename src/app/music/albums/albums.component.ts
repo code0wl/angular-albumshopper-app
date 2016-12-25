@@ -1,4 +1,3 @@
-import { ActivatedRoute, Router } from '@angular/router';
 import { Album } from './../shared/models/album.model';
 import { AlbumService } from './../shared/services/album.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
@@ -14,22 +13,18 @@ export class AlbumsComponent implements OnInit, OnDestroy {
   selectedAlbum: Album;
   subscription: Subscription;
 
-  constructor(
-    private albumService: AlbumService,
-    private activatedRoute: ActivatedRoute,
-    private router: Router) {
+  constructor(private albumService: AlbumService) {
   }
 
   ngOnInit() {
-    this.subscription = this.albumService.albums.subscribe((albums: Array<Album>) => this.albums = albums);
+    this.subscription = this.albumService.albums
+      .subscribe((albums: Array<Album>) => {
+        this.albums = albums;
+        this.albumService.cartCollection = albums;
+      });
   }
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
-  }
-
-  onSelect(event, album: Album) {
-    this.router.navigate(['albums', album.title]);
-    this.albumService.selectedAlbumItem = album;
   }
 }

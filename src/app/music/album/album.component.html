@@ -1,16 +1,18 @@
 <li>
-    <div class="album-item">
-        <div class="pure-g content-container">
-            <div class="pure-u-1-5">
-                <img [src]="album.cover">
-            </div>
-            <div class="pure-u-3-5">
-                <p [textContent]="album.title"></p>
-                <ul>
-                    <li *ngFor="let artist of album.artists" [textContent]="artist.name"></li>
-                </ul>
-                <p [textContent]="album.genres"></p>
+    <a class="list-item" [routerLink]="[album.title]" routerLinkActive="active">
+        <div class="album-item">
+            <div class="pure-g content-container">
+                <div class="pure-u-1-5">
+                    <img [src]="album.cover">
+                </div>
+                <div class="pure-u-3-5">
+                    <p [textContent]="album.title"></p>
+                    <ul>
+                        <li *ngFor="let artist of album.artists" [textContent]="artist.name"></li>
+                    </ul>
+                    <p [textContent]="album.genres"></p>
+                </div>
             </div>
         </div>
-    </div>
+    </a>
 </li>
