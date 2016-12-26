@@ -1,3 +1,4 @@
+import { ShoppingService } from './shopping-cart/shared/services/shopping.service';
 import { ShoppingListComponent } from './shopping-cart/shopping-list/shopping-list.component';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -17,8 +18,9 @@ import { NavigationComponent } from './navigation/navigation.component';
     BrowserModule,
     MusicModule,
     RouterModule,
-    Routing],
-  providers: [],
+    Routing
+  ],
+  providers: [ShoppingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

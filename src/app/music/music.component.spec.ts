@@ -1,6 +1,9 @@
+import { AlbumService } from './shared/services/album.service';
+import { AlbumComponent } from './album/album.component';
+import { AlbumsComponent } from './albums/albums.component';
+import { HttpModule } from '@angular/http';
+import { RouterTestingModule } from '@angular/router/testing';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
 import { MusicComponent } from './music.component';
 
 describe('MusicComponent', () => {
@@ -9,9 +12,11 @@ describe('MusicComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MusicComponent ]
+      declarations: [MusicComponent, AlbumsComponent, AlbumComponent],
+      imports: [RouterTestingModule, HttpModule],
+      providers: [AlbumService ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -20,7 +25,7 @@ describe('MusicComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create the music component', () => {
     expect(component).toBeTruthy();
   });
 });

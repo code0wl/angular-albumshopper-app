@@ -1,3 +1,5 @@
+import { MusicComponent } from './app/music/music.component';
+import { musicRoutes } from './app/music/music.routes';
 import './polyfills.ts';
 
 import 'zone.js/dist/long-stack-trace-zone';
@@ -25,7 +27,7 @@ getTestBed().initTestEnvironment(
   platformBrowserDynamicTesting()
 );
 // Then we find all the tests.
-let context = require.context('./', true, /\app.component.spec\.ts$/);
+let context = require.context('./', true, /\music.component.spec\.ts$/);
 // And load the modules.
 context.keys().map(context);
 // Finally, start Karma to run the tests.
