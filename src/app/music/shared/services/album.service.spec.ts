@@ -1,12 +1,11 @@
-/* tslint:disable:no-unused-variable */
-
+import { Http } from '@angular/http';
 import { TestBed, async, inject } from '@angular/core/testing';
 import { AlbumService } from './album.service';
 
 describe('AlbumService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [AlbumService]
+      providers: [AlbumService, Http]
     });
   });
 

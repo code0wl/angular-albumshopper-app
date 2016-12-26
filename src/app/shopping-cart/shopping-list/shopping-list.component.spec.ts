@@ -1,4 +1,4 @@
-/* tslint:disable:no-unused-variable */
+import { ShoppingService } from './../shared/services/shopping.service';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
@@ -11,7 +11,8 @@ describe('ShoppingListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShoppingListComponent ]
+      declarations: [ ShoppingListComponent ],
+      providers: [ShoppingService]
     })
     .compileComponents();
   }));
