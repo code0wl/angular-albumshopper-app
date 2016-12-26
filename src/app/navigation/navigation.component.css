@@ -21,3 +21,7 @@
     align-items: center;
     justify-content: flex-end;
 }
+
+.pure-menu-list .active {
+    text-decoration: underline;
+}

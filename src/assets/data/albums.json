@@ -4,13 +4,13 @@
         "artists": [{ "name": "Michael Jackson" }],
         "genres": ["Pop"],
         "cover": "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-15.jpg",
-        "label": "Universal"
+        "label": ""
     }, {
         "release": "2010",
         "title": "Art vs Science",
         "artists": [{ "name": "some artist" }],
         "genres": ["experimental"],
-        "label": "some label",
+        "label": "",
         "cover": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/602f4731226337.5646928c3633f.jpg"
     },
     {
@@ -18,112 +18,15 @@
         "title": "THE WONDER OF YOU",
         "artists": [{ "name": "Elvis Presley" }],
         "genres": ["Pop"],
-        "label": "some label",
+        "label": "",
         "cover": "https://photos.prnewswire.com/prnvar/20160907/405303?max=1600"
     },
     {
         "release": "2010",
-        "title": "Art vs Science",
-        "artists": [{ "name": "some artist" }],
+        "title": "THE HEAVY ENTERTAINMENT SHOW",
+        "artists": [{ "name": "ROBBIE WILLIAMS" }],
         "genres": ["experimental"],
-        "label": "some label",
-        "cover": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/602f4731226337.5646928c3633f.jpg"
-    },
-    {
-        "release": "2010",
-        "title": "Art vs Science",
-        "artists": [{ "name": "some artist" }],
-        "genres": ["experimental"],
-        "label": "some label",
-        "cover": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/602f4731226337.5646928c3633f.jpg"
-    },
-    {
-        "release": "2010",
-        "title": "Art vs Science",
-        "artists": [{ "name": "some artist" }],
-        "genres": ["experimental"],
-        "label": "some label",
-        "cover": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/602f4731226337.5646928c3633f.jpg"
-    },
-    {
-        "release": "2010",
-        "title": "Art vs Science",
-        "artists": [{ "name": "some artist" }],
-        "genres": ["experimental"],
-        "label": "some label",
-        "cover": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/602f4731226337.5646928c3633f.jpg"
-    },
-    {
-        "release": "2010",
-        "title": "Art vs Science",
-        "artists": [{ "name": "some artist" }],
-        "genres": ["experimental"],
-        "label": "some label",
-        "cover": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/602f4731226337.5646928c3633f.jpg"
-    },
-    {
-        "release": "2010",
-        "title": "Art vs Science",
-        "artists": [{ "name": "some artist" }],
-        "genres": ["experimental"],
-        "label": "some label",
-        "cover": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/602f4731226337.5646928c3633f.jpg"
-    },
-    {
-        "release": "2010",
-        "title": "Art vs Science",
-        "artists": [{ "name": "some artist" }],
-        "genres": ["experimental"],
-        "label": "some label",
-        "cover": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/602f4731226337.5646928c3633f.jpg"
-    },
-    {
-        "release": "2010",
-        "title": "Art vs Science",
-        "artists": [{ "name": "some artist" }],
-        "genres": ["experimental"],
-        "label": "some label",
-        "cover": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/602f4731226337.5646928c3633f.jpg"
-    },
-    {
-        "release": "2010",
-        "title": "Art vs Science",
-        "artists": [{ "name": "some artist" }],
-        "genres": ["experimental"],
-        "label": "some label",
-        "cover": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/602f4731226337.5646928c3633f.jpg"
-    },
-    {
-        "release": "2010",
-        "title": "Art vs Science",
-        "artists": [{ "name": "some artist" }],
-        "genres": ["experimental"],
-        "label": "some label",
-        "cover": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/602f4731226337.5646928c3633f.jpg"
-    },
-    {
-        "release": "2010",
-        "title": "Art vs Science",
-        "artists": [{ "name": "some artist" }],
-        "genres": ["experimental"],
-        "label": "some label",
-        "cover": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/602f4731226337.5646928c3633f.jpg"
-    },
-    {
-        "release": "2010",
-        "title": "Art vs Science",
-        "artists": [{ "name": "some artist" }],
-        "genres": ["experimental"],
-        "label": "some label",
-        "cover": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/602f4731226337.5646928c3633f.jpg"
-    },
-    {
-        "release": "2010",
-        "title": "Art vs Science",
-        "artists": [{ "name": "some artist" }],
-        "genres": ["experimental"],
-        "label": "some label",
-        "cover": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/602f4731226337.5646928c3633f.jpg"
+        "label": "",
+        "cover": "https://images.genius.com/3b6e6b3e0780ab4f5005d5b852a2c3b5.1000x1000x1.jpg"
     }
-
 ]

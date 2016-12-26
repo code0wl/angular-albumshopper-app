@@ -6,3 +6,7 @@
 .album-item img {
     max-width: 100%;
 }
+
+.description {
+    padding: 1rem;
+}
