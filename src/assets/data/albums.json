@@ -6,12 +6,12 @@
         "cover": "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-15.jpg",
         "label": ""
     }, {
-        "release": "2010",
-        "title": "Art vs Science",
-        "artists": [{ "name": "some artist" }],
-        "genres": ["experimental"],
+        "release": "2013",
+        "title": "Happy",
+        "artists": [{ "name": "Pharrel Williams" }],
+        "genres": ["hip hop"],
         "label": "",
-        "cover": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/602f4731226337.5646928c3633f.jpg"
+        "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/2/23/Pharrell_Williams_-_Happy.jpg/220px-Pharrell_Williams_-_Happy.jpg"
     },
     {
         "release": "2010",

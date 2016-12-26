@@ -3,8 +3,9 @@
     padding: 1rem;
 }
 
-.album-item p {
-    padding-left: 1rem;
+.album-item p,
+ul {
+    padding: 0 1rem .5rem .5rem;
 }
 
 .album-item img {
