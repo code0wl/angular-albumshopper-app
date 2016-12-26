@@ -13,7 +13,6 @@ import { AlbumsComponent } from './music/albums/albums.component';
 import { AlbumComponent } from './music/album/album.component';
 import { AlbumDetailComponent } from './music/album-detail/album-detail.component';
 import { ShoppingListComponent } from './shopping-cart/shopping-list/shopping-list.component';
-import { ShoppingControlsComponent } from './shopping-cart/shopping-controls/shopping-controls.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +22,6 @@ import { ShoppingControlsComponent } from './shopping-cart/shopping-controls/sho
     AlbumComponent,
     AlbumDetailComponent,
     ShoppingListComponent,
-    ShoppingControlsComponent,
     MusicComponent,
   ],
   imports: [
