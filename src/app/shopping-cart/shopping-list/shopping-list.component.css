@@ -48,6 +48,8 @@ ul li:hover {
 
 .title {
     padding: 0 .5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .amount-checkout {
