@@ -13,8 +13,7 @@ export class AlbumsComponent implements OnInit, OnDestroy {
   selectedAlbum: Album;
   subscription: Subscription;
 
-  constructor(private albumService: AlbumService) {
-  }
+  constructor(private albumService: AlbumService) { }
 
   ngOnInit() {
     this.subscription = this.albumService.albums

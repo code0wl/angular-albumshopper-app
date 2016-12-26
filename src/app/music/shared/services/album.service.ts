@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class AlbumService {
-  cartCollection: Array<Album> = [];
+  cartCollection: Array<Album>;
   constructor(private http: Http) { }
 
   get albums(): Observable<Array<Album>> {
