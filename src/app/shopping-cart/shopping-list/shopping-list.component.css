@@ -13,16 +13,17 @@ div:hover ul {
     opacity: 1;
 }
 
-div ul {
+div>ul {
     padding: 0;
     list-style: none;
     right: 0;
     visibility: hidden;
+    -webkit-transition: all .5s;
     transition: all .5s;
-    top: 1rem;
+    top: 7px;
     opacity: 0;
-    width: 11.5rem;
-    left: -8rem;
+    overflow: hidden;
+    left: -18rem;
     background: white;
     box-shadow: 0px 0px 11px rgba(0, 0, 0, .5);
     position: absolute;
@@ -47,4 +48,18 @@ ul li:hover {
 
 .title {
     padding: 0 .5rem;
+}
+
+.amount-checkout {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    top: -9px;
+    right: 9px;
+    height: 1rem;
+    width: 1rem;
+    font-size: .7rem;
+    color: black;
+    text-align: center;
+    line-height: 1rem;
 }
