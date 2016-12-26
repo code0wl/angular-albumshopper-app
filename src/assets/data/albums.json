@@ -9,7 +9,7 @@
         "release": "2013",
         "title": "Happy",
         "artists": [{ "name": "Pharrel Williams" }],
-        "genres": ["hip hop"],
+        "genres": ["Hip Hop"],
         "label": "",
         "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/2/23/Pharrell_Williams_-_Happy.jpg/220px-Pharrell_Williams_-_Happy.jpg"
     },
@@ -25,7 +25,7 @@
         "release": "2010",
         "title": "THE HEAVY ENTERTAINMENT SHOW",
         "artists": [{ "name": "ROBBIE WILLIAMS" }],
-        "genres": ["experimental"],
+        "genres": ["Experimental"],
         "label": "",
         "cover": "https://images.genius.com/3b6e6b3e0780ab4f5005d5b852a2c3b5.1000x1000x1.jpg"
     }
