@@ -1,4 +1,4 @@
-import { AlbumServiceStub } from './../shared/services/album.service.stub';
+import { AlbumServiceMock } from './../shared/services/album.service.mock';
 import { HttpModule } from '@angular/http';
 import { AlbumService } from './../shared/services/album.service';
 import { RouterTestingModule } from '@angular/router/testing';
@@ -19,7 +19,7 @@ describe('AlbumsComponent', () => {
             providers: [
                 {
                     provide: AlbumService,
-                    useValue: AlbumServiceStub
+                    useValue: AlbumServiceMock
                 }
             ]
         }).compileComponents();
@@ -30,8 +30,8 @@ describe('AlbumsComponent', () => {
         fixture.detectChanges();
     });
 
-    it('should retreive data from server', () => {
-        expect(component.albums.length).not.toEqual(0);
+    it('should retrieve data from server', () => {
+        expect(component.albums.length).toBeGreaterThan(0);
     });
 
      it('should transfer data to component correctly', () => {

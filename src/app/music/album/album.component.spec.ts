@@ -15,8 +15,7 @@ describe('AlbumComponent', () => {
     TestBed.configureTestingModule({
       declarations: [AlbumComponent, AlbumsComponent],
       imports: [RouterTestingModule]
-    })
-      .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {

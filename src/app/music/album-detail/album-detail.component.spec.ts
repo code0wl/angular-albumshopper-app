@@ -1,7 +1,7 @@
+import { AlbumServiceMock } from './../shared/services/album.service.mock';
+import { ShoppingServiceMock } from './../../shopping-cart/shared/services/shopping.service.mock';
 import { Observable } from 'rxjs';
 import { albumStub } from './../../../assets/data/albums.stub';
-import { AlbumServiceStub } from './../shared/services/album.service.stub';
-import { ShoppingServiceStub } from './../../shopping-cart/shared/services/shopping.service.stub';
 import { HttpModule } from '@angular/http';
 import { AlbumService } from './../shared/services/album.service';
 import { ShoppingService } from './../../shopping-cart/shared/services/shopping.service';
@@ -23,7 +23,7 @@ describe('AlbumDetailComponent', () => {
             providers: [
                 {
                     provide: ShoppingService,
-                    useValue: ShoppingServiceStub
+                    useValue: ShoppingServiceMock
                 },
                 {
                     provide: ActivatedRoute,
@@ -31,7 +31,7 @@ describe('AlbumDetailComponent', () => {
                 },
                 {
                     provide: AlbumService,
-                    useValue: AlbumServiceStub
+                    useValue: AlbumServiceMock
                 }],
             imports: [RouterTestingModule, HttpModule]
         }).compileComponents();

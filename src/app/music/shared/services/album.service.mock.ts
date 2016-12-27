@@ -3,7 +3,7 @@ import { Observable } from 'rxjs';
 import { Album } from './../models/album.model';
 import { Injectable } from '@angular/core';
 
-export const AlbumServiceStub = {
+export const AlbumServiceMock = {
     cartCollection: [albumStub],
 
     get albums(): Observable<Array<Album>> {
