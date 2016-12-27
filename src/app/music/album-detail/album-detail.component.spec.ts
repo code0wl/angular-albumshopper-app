@@ -17,7 +17,6 @@ describe('AlbumDetailComponent', () => {
     let albumService = AlbumService;
     let shoppingService = ShoppingService;
 
-
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             declarations: [AlbumDetailComponent],
