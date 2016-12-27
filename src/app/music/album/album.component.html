@@ -6,7 +6,7 @@
                     <img [src]="album.cover">
                 </div>
                 <div class="pure-u-4-5">
-                    <p [textContent]="album.title"></p>
+                    <p class="album-name" [textContent]="album.title"></p>
                     <ul>
                         <li *ngFor="let artist of album.artists" [textContent]="artist.name"></li>
                     </ul>

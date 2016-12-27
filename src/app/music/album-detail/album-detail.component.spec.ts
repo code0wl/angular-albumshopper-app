@@ -11,37 +11,37 @@ import { DebugElement } from '@angular/core';
 import { AlbumDetailComponent } from './album-detail.component';
 
 describe('AlbumDetailComponent', () => {
-  let component: AlbumDetailComponent;
-  let fixture: ComponentFixture<AlbumDetailComponent>;
-  let albumService = AlbumService;
+    let component: AlbumDetailComponent;
+    let fixture: ComponentFixture<AlbumDetailComponent>;
+    let albumService = AlbumService;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [AlbumDetailComponent],
-      providers: [
-        {
-          provide: ShoppingService,
-          useValue: ShoppingServiceStub
-        },
-        {
-          provide: AlbumService,
-          useValue: AlbumServiceStub
-        }],
-      imports: [RouterTestingModule, HttpModule]
-    })
-      .compileComponents();
-  }));
+    beforeEach(async(() => {
+        TestBed.configureTestingModule({
+            declarations: [AlbumDetailComponent],
+            providers: [
+                {
+                    provide: ShoppingService,
+                    useValue: ShoppingServiceStub
+                },
+                {
+                    provide: AlbumService,
+                    useValue: AlbumServiceStub
+                }],
+            imports: [RouterTestingModule, HttpModule]
+        })
+            .compileComponents();
+    }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(AlbumDetailComponent);
-    component = fixture.componentInstance;
-    albumService = fixture.debugElement.injector.get(AlbumService);
+    beforeEach(() => {
+        fixture = TestBed.createComponent(AlbumDetailComponent);
+        component = fixture.componentInstance;
+        albumService = fixture.debugElement.injector.get(AlbumService);
 
-    fixture.detectChanges();
-  });
+        fixture.detectChanges();
+    });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    it('should create a components', () => {
+        expect(component).toBeTruthy();
+    });
 
 });

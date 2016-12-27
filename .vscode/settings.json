@@ -1,3 +1,61 @@
+// Place your settings in this file to overwrite the default settings
 {
-    "typescript.tsdk": "./node_modules/typescript/lib"
+    "autoprefixer.browsers": [
+        "last 10 versions",
+        "> 1%"
+    ],
+    "tidyHtml.formatOnSave": false,
+    "editor.lineHeight": 20,
+    "python.linting.pep8Enabled": true,
+    "files.exclude": {
+        "**/node_modules": true,
+        "**/.target": true,
+        "**/platforms": true,
+        ".vscode": true,
+        "coverage/": true,
+        "**/*.js.map": true,
+        "**/*.css": {
+            "when": "$(basename).scss"
+        },
+        "**/*.js": {
+            "when": "$(basename).ts"
+        }
+    },
+    "eslint.enable": true,
+    "eslint.options": {
+        "parserOptions": {
+            "ecmaVersion": 6,
+            "sourceType": "module"
+        }
+    },
+    "editor.tabSize": 4,
+    "typescript.check.tscVersion": false,
+    "cSpell.userWords": [
+        "rxjs",
+        "scrollview",
+        "Injectable",
+        "initialised",
+        "Truthy",
+        "Jsonp",
+        "googleapis",
+        "oppionionated",
+        "Dapp",
+        "scss",
+        "versie",
+        "Blockis",
+        "Neighborehood",
+        "haarlem",
+        "whatwg",
+        "showContent",
+        "'nativescript-adobe-marketing-cloud'",
+        "strongloop",
+        "lastmessage",
+        "phantomjs",
+        "interval",
+        "isread",
+        "Rachèl",
+        ", In"
+    ],
+    "files.associations": { "*.scss": "sass" },
+    "window.zoomLevel": 0
 }
