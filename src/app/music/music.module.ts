@@ -17,7 +17,6 @@ import { ShoppingService } from './../shopping-cart/shared/services/shopping.ser
         MusicComponent
     ],
     imports: [HttpModule, RouterModule, BrowserModule],
-    providers: [AlbumService],
-    bootstrap: [MusicComponent]
+    providers: [AlbumService]
 })
 export class MusicModule { }
